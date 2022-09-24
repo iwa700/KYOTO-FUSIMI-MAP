@@ -8,14 +8,16 @@
         <div class="container">
           <div class="row">
             <div class='mx-auto col-11 col-sm-10 col-lg-8 col-xl-6'>
-              <p>ようこそ、ながのCAKEへ！</p>
-              <p>このサイトは、ケーキ販売のECサイトになります。</p>
-              <p>会員でない方も商品の閲覧はできますが、</p>
-              <p>購入時には、会員登録が必要になります。</p>
+          
+　　　　　　　　
+              <p>ようこそ、京都　伏見　賃貸マップへ！</p>
+              <p>このサイトは、京都市伏見区　丹波橋・伏見エリアの観光・賃貸物件情報マンションです。</p>
+              <p>弊社の会員でない方も商品の閲覧はできますが、</p>
+              <p>物件の予約時には、会員登録が必要になります。</p>
             </div> 
             
             <div class="btn-wrapper col-10 mx-auto">
-              <h3>新着商品</h3>
+              <h3>弊社物件一覧</h3>
               
               <tbody>
                    <% @items_latest4.each do |item| %>
@@ -32,8 +34,30 @@
                     </tr>
                     <% end %>
               </tbody> 
-              <%= link_to '全ての商品を見る>', items_path, class: "btn btn-sm btn-success " %> 
-            </div>  
+              <%= link_to '全ての物件を見る>', items_path, class: "btn btn-sm btn-success " %> 
+            </div> 
+            
+            <!--<footer class="bg-dark text-white pt-5 pb-4">-->
+            <!--    <div class="container">-->
+            <!--      <div class="row no-gutters">-->
+            <!--        <div class="col-md-4">-->
+            <!--          <p>善良な市民同士で無差別に食欲を煽るSNS</p>-->
+            <!--        </div>-->
+                    
+            <!--        <div class="col-md-8">-->
+            <!--          <h6 class="text-white mt-2 mb-3">Link</h6>-->
+            <!--          <ul class="p-0 list-unstyled">-->
+            <!--            <li>-->
+            <!--              <a href="" title="About" class="text-white-50">会社概要</a>-->
+            <!--            </li>-->
+            <!--            <li>-->
+            <!--              <a href="" title="License informations" class="text-white-50">プライバシーポリシー</a>-->
+            <!--            </li>-->
+            <!--          </ul>-->
+            <!--        </div>-->
+            <!--      </div>-->
+            <!--    </div>-->
+            <!--</footer>-->
             
           </div>  
       　</div>
