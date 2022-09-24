@@ -1,0 +1,10 @@
+<h1>Customer#index顧客一覧</h1>
+<p>Find me in app/views/customer/index.html.erb</p>
+<h1>顧客一覧</h1>
+
+<%= @customers.each do |customer| %>
+
+  <p>氏名</p>
+  <span><%= customer.name %></span>
+  
+<% end %>

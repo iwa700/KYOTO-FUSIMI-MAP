@@ -56,3 +56,13 @@ end
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
   gem 'devise'
+  
+  gem 'faker'
+  
+  gem "enum_help"
+  
+  gem 'image_processing', '~> 1.2'
+  
+  gem 'pry-rails'
+
+  gem 'rails-i18n'

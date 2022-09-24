@@ -1,0 +1,15 @@
+<h2><div class="p-3 mb-2 bg-light text-dark">商品一覧(全8件)</h2>
+
+<% @items_latest8.each do |item| %>
+
+<td>
+<%= link_to item_path(item.id) do %>
+　<%= image_tag item.get_image(100,100) %>
+　<% end %>
+　</td>
+
+  <span><%= item.name %></span>
+  
+  <span><%= item.price %>円</span>
+  
+<% end %>

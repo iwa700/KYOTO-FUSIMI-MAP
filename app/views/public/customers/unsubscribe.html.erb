@@ -1,0 +1,18 @@
+
+<h5 class="font-weight-bold", class="row justify-content-center">
+
+本当に退会しますか❓
+
+</h5>
+
+<h5>
+<br>退会すると、今までの会員登録情報や履歴が</br>
+見えなくなります。
+<br>退会する場合は、「退会する」を押してください。</br>
+</h5>
+
+
+<%= link_to '退会しない', customer_path(current_customer.id), class:"btn btn-primary " %> 
+
+<%= link_to '退会する', customers_withdrawal_path(current_customer.id),method: :patch,"data-confirm" => "本当に退会しますか？",  class: "btn btn-danger" %> 
+<%#= link_to '削除する', cart_item_path(cart_item.id), method: :delete, "data-confirm" => "本当に削除しますか？", class: "btn btn-sm btn-danger " %>

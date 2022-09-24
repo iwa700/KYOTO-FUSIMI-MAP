@@ -1,0 +1,43 @@
+<div class = container>
+    
+    <div class = "row">
+     <div class="col-md-7 offset-md-2">
+       <h2><div class="p-3 mb-2 bg-light text-dark">商品詳細</h2>
+       <table class="table table-striped">
+         <thead>
+           <tr>
+               <th>商品画像</th>
+               <th>商品名</th>
+               <th>商品説明</th>
+               <th>ジャンル</th>
+               <th>商品価格</th>
+               <th>ステータス</th>
+           </tr>
+         </thead>
+         <tbody>
+       
+           <td><%= image_tag @item.get_image(2000,2000) %></td>
+           
+           <td><%= @item.name %></td>
+           
+        　　<td><%= @item.introduction %></td>
+            
+           <td><%= @item.genre.name %></td> 
+           
+           <td>￥<%= @item.price %>(税込)</td> 
+           
+           <% if @item.is_active %>
+           <td class="text-success">販売中</td>
+           <% else %>
+           <td class="text-secondary">販売停止中</td>
+           <% end %>
+           </td>
+         </tbody>
+      </table>
+     </div>
+    </div>
+
+     <div class ="row">
+       <%= link_to '編集する', edit_admin_item_path(@item.id), class: "btn btn-sm btn-success offset-md-2" %>
+     </div>
+ </div>
