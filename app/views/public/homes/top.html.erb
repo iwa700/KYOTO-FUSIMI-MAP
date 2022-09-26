@@ -1,32 +1,32 @@
 <main>
-  <div class='container px-5 px-sm-0'>
+  <div class='container'>
     <div class='row'>
-      <div class='col-md-3'>
+      <div class='col'>
+        
       </div>
-      
-        <p id="notice"></p>
-        <div class="container">
-          <div class="row">
-            <div class='mx-auto col-11 col-sm-10 col-lg-8 col-xl-6'>
-          
-　　　　　　　　
-              <p>ようこそ、京都　伏見　賃貸マップへ！</p>
-              <p>このサイトは、京都市伏見区　丹波橋・伏見エリアの観光・賃貸物件情報マンションです。</p>
-              <p>弊社の会員でない方も商品の閲覧はできますが、</p>
-              <p>物件の予約時には、会員登録が必要になります。</p>
+    
+            <div class='mx-auto'>
+              <p>ようこそ、京都・伏見・賃貸マップへ！このサイトは、京都市伏見区　丹波橋・伏見エリアの観光・賃貸物件情報サイトです
+              弊社の会員でない方も商品の閲覧はできますが、物件の予約時には、会員登録が必要になります
+               <%= image_tag('map.png',size:"1300x1000") %>
+               </p>
             </div> 
             
-            <div class="btn-wrapper col-10 mx-auto">
+            <div class="btn-wrapper  mx-auto">
               <h3>弊社物件一覧</h3>
               
               <tbody>
                    <% @items_latest4.each do |item| %>
                     <tr>
+                      <th>
+                    
+                      </th>
                       <td>
                       <%= link_to item_path(item.id) do %>
-                    　<%= image_tag item.get_image(200,200) %>
+                    　<%= image_tag item.get_image(300,300) %>
                     　<% end %>
                     　</td>
+                    </tr>
                     　
                       <td><%= item.name %></td>
                       <td>￥<%= item.price %></td>
@@ -59,8 +59,8 @@
             <!--    </div>-->
             <!--</footer>-->
             
-          </div>  
-      　</div>
+       <!--   </div>  -->
+      　<!--</div>-->
       </div>
     </div>
 </main>
